@@ -16,12 +16,14 @@
       <div class="about-us__container">
         <img class="about-us__img" src="~/assets/img/about-us-1.png" alt="" />
         <div class="about-us__flex">
-          <p class="about-us__company">Компания</p>
-          <h2 class="about-us__title">CoffeeShop</h2>
-          <p class="about-us__text">
-            Задача организации, в особенности же постоянное информационно-пропагандистское
-            обеспечение нашей деятельности обеспечивает широкому кругу
-          </p>
+          <div class="about-us__content">
+            <p class="about-us__company">Компания</p>
+            <h2 class="about-us__title">CoffeeShop</h2>
+            <p class="about-us__text">
+              Задача организации, в особенности же постоянное информационно пропагандистское
+              обеспечение нашей деятельности обеспечивает широкому кругу
+            </p>
+          </div>
         </div>
         <img class="about-us__img" src="~/assets/img/about-us-2.png" alt="" />
       </div>
@@ -146,7 +148,12 @@ export default {
     flex-direction: column;
     padding: 50px;
     width: 100%;
+    height: 450px;
     background-color: var(--black);
+  }
+
+  &__content {
+    max-width: 440px;
   }
 
   &__company {
